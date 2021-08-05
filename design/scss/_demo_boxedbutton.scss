@@ -1,0 +1,226 @@
+/*
+	tt-boxedbutton
+*/
+#tt-boxedbutton{
+	@media (min-width: 1025px) {
+		top: 26.8%;
+		right: 5px;
+		position: fixed;
+		z-index: 8;
+		display: inline-flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-content: center;
+		align-items: flex-end;
+		direction: ltr;
+		.rtlbutton:not(:first-child){
+			margin-top: 5px;
+		}
+		.rtlbutton{
+			display: block;
+			font-family:$default_font2;
+			color: #ffffff;
+			overflow: hidden;
+			cursor: pointer;
+			transition: .2s ease-out;
+			overflow: hidden;
+			border-radius: $border_radius;
+			.box-btn{
+				display: inline-block;
+				float: left;
+				width:47px;
+				height: 35px;
+				font-weight: 500;
+				line-height: 2.65;
+				cursor: pointer;
+				text-align: center;
+				background-color: $default_color;
+				i{
+					font-size: 20px;
+					line-height: 1.65;
+				}
+			}
+		   .box-description{
+				display: inline-block;
+				float: left;
+				height: 35px;
+				line-height: 2.65;
+				background-color: $default_color;
+				width: 0;
+				font-weight: 300;
+				padding:0 0px 0 0;
+				overflow: hidden;
+				white-space: nowrap;
+				transition: width $value_speed linear;
+			}
+		   .box-disable{
+				display: inline-block;
+				float: left;
+				width: 0px;
+				height: 35px;
+				font-weight: 300;
+				line-height: 2.65;
+				color: $default_color;
+				transition: width $value_speed linear;
+			}
+			&:hover{
+				width: auto;
+				.box-description{
+					padding:0 10px 0 0;
+					width: 140px;
+					overflow: hidden;
+					white-space: nowrap;
+				}
+			}
+			&.active{
+				.box-btn{
+					background-color: $default_color2;
+				}
+				.box-description{
+					width: 0;
+					padding: 0;
+					background-color: $default_color2;
+				}
+				.box-disable{
+					width: 55px;
+					padding:0 10px 0 0;
+					background-color: $default_color2;
+				}
+			}
+		}
+	}
+	@media (max-width: 1024px) {
+		display: none;
+	}
+	.rtlbutton-color{
+		margin-top: 5px;
+		position: relative;
+		.box-btn{
+			cursor: pointer;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+		.box-description{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding:5px 16px 5px 11px;
+			white-space: nowrap;
+			background-color: #191919;
+			height: 30px;
+			border-radius: $border_radius;
+			transition: all 0.2s linear;
+			transform: translate(calc(100% + 5px), 0);
+			transform: translate3d(calc(100% + 5px), 0, 0);
+			.box-title{
+				font-family: $default_font;
+				font-weight: 600;
+				color: #ffffff;
+				letter-spacing: 0.04em;
+				padding-right: 7px;
+			}
+			ul{
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: flex-start;
+				align-content: flex-start;
+				align-items: center;
+				list-style: none;
+				margin: 0;
+				padding:0;
+				li{
+					width: 20px;
+					height: 20px;
+					margin-left: 10px;
+					a{
+						width: 100%;
+						height: 100%;
+						display: block;
+						border-radius: 50%;
+						transform: scale(1);
+						transition: all $value_speed linear;
+						&.colorswatch1{
+							background-color:#2879fe;
+						}
+						&.colorswatch2{
+							background-color:#08da97;
+						}
+						&.colorswatch3{
+							background-color:#8cc34b;
+						}
+						&.colorswatch4{
+							background-color:#ff9801;
+						}
+						&.colorswatch5{
+							background-color:#fe5722;
+						}
+						&.colorswatch6{
+							background-color:#ed2114;
+						}
+						&.colorswatch7{
+							background-color:#ef5e95;
+						}
+						&.colorswatch8{
+							background-color:#b704eb;
+						}
+						&:hover{
+							transform: scale(1.3);
+						}
+					}
+					&.active{
+						pointer-events: none;
+					}
+					&.active a:before{
+						content: "\ea11";
+						color: #ffffff;
+						font-size: 14px;
+						line-height: 1;
+						position: relative;
+						left:3px;
+						top: 2px;
+						font-family: $default_font_icon;
+						font-style: normal;
+						font-weight: 400;
+					}
+				}
+			}
+		}
+		&:hover{
+			.box-description{
+				-webkit-transform: translate(0%, 0);
+				-ms-transform: translate(0%, 0);
+				transform: translate(0%, 0);
+				-webkit-transform: translate3d(0%, 0, 0);
+				transform: translate3d(0%, 0, 0);
+			}
+		}
+	}
+}
+body:not(.loaded){
+	#tt-boxedbutton{
+		.rtlbutton-color{
+			.box-description{
+				display: none;
+			}
+		}
+	}
+}
+html.ie{
+	 #tt-boxedbutton{
+		.rtlbutton-color{
+			.box-description{
+				right: -390px;
+				width: 380px;
+			}
+			&:hover .box-description{
+				right: 0px;
+			}
+		}
+	 }
+}

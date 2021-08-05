@@ -1,0 +1,1896 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* font */
+$default_font:										'Roboto', sans-serif;
+$default_font2:										$default_font;
+/* font icon*/
+$default_font_icon:									'wokiee';
+$default_bg_color:                					#ffffff;
+$default_text_color:              					#777777;
+$link_color_base:                   				$default_text_color;
+$simple_links_hover_speed: 							0.2s;
+$value_speed:										$simple_links_hover_speed;
+$speed:												$simple_links_hover_speed;
+$default_title_color:               				#191919;
+/* Colors */
+$default_color:                  					#999999;
+$default_color2:                    				#191919;
+$border:                            				#e9e7e7;
+$radius:											6px;
+$border_radius:                            			6px;
+$border_radius_small:                            	2px;
+
+$base-color:										$default_color;
+$base-dark-color:									$default_color2;
+$white-color:										#ffffff;
+$tt-light-green-color:								#08da97;
+$color-bg-01:										#add8e6;
+$color-bg-02:										#fe9001;
+
+$color-bg-03:										#808080;
+$color-bg-04:										#0000ff;
+$color-bg-05:										#00ff00;
+
+
+$color-bg-06:										#46d3bb;
+$color-bg-07:										#f66c47;
+$color-bg-08:										#ffffff;
+$color-bg-09:										#e5e5e5;
+$color-bg-10:										#fed533;
+$color-bg-11:										#f36b26;
+$color-bg-12:										#7bba3c;
+$color-bg-13:										#1790c8;
+$color-bg-14:										#d82a90;
+$color-bg-15:										#7f7f00;
+$color-bg-16:										#e7352b;
+$color-bg-17:										#8d429f;
+$color-bg-18:										#777878;
+
+/*
+	loader
+*/
+$loader_site_bg:									#ffffff;
+$loader_figure_bg:									$default_color;
+$loader_figure_border:								#ffffff;
+$loader_width:										250px;
+$loader_dot_size:									15px;
+/*
+	Back to top
+*/
+$backToTop_desctope_bg:								rgba($default_color, 0.75);
+$backToTop_desctope_bg_hover:						rgba(48, 48, 48, 1);
+$backToTop_desctope_text:							#ffffff;
+$backToTop_desctope_text_hover:						#ffffff;
+$backToTop_mobile_bg:								#ffffff;
+$backToTop_mobile_bg_hover:							#ffffff;
+$backToTop_mobile_text:								$default_color2;
+$backToTop_mobile_text_hover:						$default_color;
+/*
+	Breadcrumb
+*/
+$breadcrumb_bg:										#f7f8fa;
+$breadcrumb_text:									$default_text_color;
+$breadcrumb_link:									$breadcrumb_text;
+$breadcrumb_link_hover:								$default_color;
+/*
+	Form
+*/
+$form_placeholder:									$default_text_color;
+$form_control_bg:									#f7f8fa;
+$form_control_bg_focus:								#ffffff;
+$form_control_text:									$default_text_color;
+$form_control_border:								#f7f8fa;
+$form_control_border_focus:							$default_color;
+$form_control_label:								$default_color2;
+$form_required_text:								$default_text_color;
+$checkbox_label:									$default_color2;
+$checkbox_bg:										#f7f8fa;
+$checkbox_bg_active:								$default_color;
+$checkbox_border:									#cdcdcd;
+$checkbox_icon_active:								#ffffff;
+$checkbox_label_hover:								$default_color;
+$radio_text: 										$default_text_color;
+$radio_text_hover:									$default_color;
+$radio_bg: 											#f7f8fa;
+$radio_bg_active: 									$default_color;
+$radio_bg_border:									#cdcdcd;
+$errors_bg:											#f8353e;
+$errors_text:										#ffffff;
+$errors_icon:										$errors_text;
+/*
+	typography
+*/
+/* button */
+$btn_colorbg:										$default_color;
+$btn_colortext:										#ffffff;
+$btn_colorbg_hover:									#2267d8;
+$btn_colortext_hover:								#ffffff;
+$btnwhite_colorbg:									#ffffff;
+$btnwhite_colortext:								$default_color2;
+$btnwhite_colorbg_hover:							$default_color2;
+$btnwhite_colortext_hover:							#ffffff;
+$btndark_colorbg:									$default_color2;
+$btndark_colortext:									#ffffff;
+$btndark_colorbg_hover:								$default_color;
+$btndark_colortext_hover:							#ffffff;
+$btnborder_colorbg:									transparent;
+$btnborder_colortext:								$default_color;
+$btnborder_colorborder:								$default_color;
+$btnborder_colorbg_hover:							$default_color2;
+$btnborder_colortext_hover:							#ffffff;
+$btnborder_colorborder_hover:						$default_color2;
+$btnborder01_colorbg:								transparent;
+$btnborder01_colortext:								#999999;
+$btnborder01_colorborder:							#999999;
+$btnborder01_colorbg_hover:							$default_color2;
+$btnborder01_colortext_hover:						#ffffff;
+$btnborder01_colorborder_hover:						$default_color2;
+$btnlink_colortext:									$default_color;
+$btnlink_colortext_hover:							$default_color2;
+$btnlink02_colortext:								$default_color;
+$btnlink02_colortext_hover:							$default_color2;
+$btnunderline_colortext:							$default_color;
+$btnunderline_colorborder:							$default_color;
+$btnunderline_colortext_hover:						$default_color2;
+$btnunderline_colorborder_hover:					transparent;
+$btnunderline_white_colortext:						#ffffff;
+$btnunderline_white_colorborder:					#ffffff;
+$btnunderline_white_colortext_hover:				$default_color2;
+$btnunderline_white_colorborder_hover:				transparent;
+$ttlink_text:										$default_color;
+$ttlink_text_hover:									$default_color2;
+$default_title: 									$default_title_color;
+$default_title_hover: 								$default_color;
+$default_title_subpages_border:						$border;
+$title_border:										$border;
+$mark_bg:											$default_color2;
+$mark_text:											#ffffff;
+$hr_border:											$border;
+$contentInfo_title:									$default_color2;
+$contentInfo_title_hover:							$default_color;
+$contentInfo_text:									$default_text_color;
+$contentInfo_text_large:							$default_color2;
+$contentInfo_text_small:							#999999;
+/* list */
+$list_dash_text:									$default_text_color;
+$list_dash_bullet:									$default_text_color;
+$list_dot_text:										$default_text_color;
+$list_dot_large_text:								$default_color2;
+$list_dot_link:										$default_color2;
+$list_dot_link_hover:								$default_color;
+$list_dot_bullet:									$default_color;
+$list_dot_bullet_sub:								#191918;
+$list_number_text:									$default_text_color;
+$list_content_text:									$default_text_color;
+$blockquote_bg:										#f7f8fa;
+$blockquote_icon:									$default_color;
+$blockquote_title:									$default_title_color;
+$blockquote_title_hover:							$default_color;
+$blockquote_title_description_text01: 				#999999;
+$blockquote_title_description_text02: 				$default_color2;
+$table01_border:									$border;
+$table01_thead_text:								$default_color2;
+$table02_border:									$border;
+$table02_title:										$default_title_color;
+$table03_title:										$default_color2;
+$block_title_text: 									$default_title_color;
+$block_title_link: 									$default_color;
+$block_title_link_hover: 							$block_title_link;
+$block_title_link_border:							$default_color;
+$block_title_link_border_hover:						transparent;
+$block_title_small_text:							$default_title_color;
+$block_title_small_link:							$default_color;
+$block_title_small_link_hover:						$block_title_small_link;
+$block_title_small_link_border:						$default_color;
+$block_title_small_link_border_hover:				transparent;
+$block_title_description_text:						$default_title_color;
+$faq_title: 										$default_title_color;
+$faq_title_hover: 									$default_color;
+$about_box_text: 									#ffffff;
+$about_box_title:									#ffffff;
+$about_box_blockquote_icon:							#ffffff;
+$about_box_blockquote_title: 						#ffffff;
+$about_box_blockquote_text:							#ffffff;
+$about_box_blockquote_title_mobile: 				$default_title_color;
+$about_box_blockquote_icon_mobile: 					$default_color;
+$contact_box_text:									#ffffff;
+$contact_box_title:									#ffffff;
+$contact_box_link:									#ffffff;
+$contact_box_link_hover:							$default_color;
+$contact_info_icon: 								$default_color;
+$contact_info_title: 								$default_title_color;
+$box_thumb_title:									$default_title_color;
+$box_thumb_title_hover:								$default_color;
+$page404_bg:										#ffffff;
+$page404_text:										$default_color2;
+$page404_title:										$default_color2;
+$empty_cart_text: 									$default_text_color;
+$empty_cart_icon:									#ebecee;
+$empty_cart_title:									$default_title_color;
+$empty_search_text: 								$default_text_color;
+$empty_search_icon:									#ebecee;
+$empty_search_title:								$default_title_color;
+$coming_soon_title01:								$default_title_color;
+$coming_soon_title02:								$default_title_color;
+$socialIcon_pageContent_icon:						#d8d8d8;
+$socialIcon_pageContent_icon_hover:					$default_color2;
+$wrapper_socialIcon_bg:								#f7f8fa;
+$loginForm_border:									$border;
+$loginForm_links:									$default_color;
+$loginForm_links_hover:								$default_color2;
+$gift_title:										$default_title_color;
+$gift_price:										#ffffff;
+$gift_code:											#ffffff;
+$gift_code_border:									#ffffff;
+$gift_code_text:									$default_color2;
+$servicesBlock_icon:								$default_color;
+$servicesBlock_title_text:							$default_title_color;
+$servicesBlock_description_text:					$default_text_color;
+$servicesBlock_title_text_hover:					$default_color;
+$img_box_border:									$border;
+$img_box_border_hover:								$default_color;
+$layout_vertical_title:								$default_title_color;
+$layout_vertical_title_hover:						$default_color;
+$layout_vertical_info:								#999999;
+$layout_vertical_info_hover:						$default_color;
+$layout_vertical_price:								$default_color2;
+$layout_vertical_price_new:							#f8353e;
+$layout_vertical_price_old:							$layout_vertical_price;
+$tabsDefault_nav_text:								#999999;
+$tabsDefault_nav_text_hover:						$default_color2;
+$tabsDefault_nav_text_active:						$tabsDefault_nav_text_hover;
+$items_categories_title_hover:						$default_color;
+$items_categories_list_text:						$default_text_color;
+$items_categories_list_text_hover:					$default_color;
+$items_categories_list_text_active:					$items_categories_list_text_hover;
+$ttLoader_bg:										$default_color;
+/*
+	boxed layout
+*/
+$boxed_bg_color:                					#f7f8fa;
+$boxed_stuck_nav_shadow:							rgba(0,0,0,0.45);
+/*
+	header
+*/
+$top_panel_bg:										$default_color;
+$top_panel_text:									#ffffff;
+$top_panel_link:									#ffffff;
+$top_panel_link_border:								#ffffff;
+$top_panel_btn_close:								#ffffff;
+$top_panel_btn_close_hover:							#ffffff;
+/*logo if text*/
+$logo_text_color:									$default_color;
+$logo_text_color_hover:								$default_color2;
+/*account, language, currency*/
+$header_dropdown_toggle_btn_text:					$default_color2;
+$header_dropdown_toggle_btn_text_hover:				$default_color;
+$header_dropdown_toggle_btn_text_active:			$default_color;
+$header_dropdown_toggle_bg:							#ffffff;
+$header_dropdown_toggle_box_shadow:					rgba(0, 0, 0, 0.08);
+$header_popup_mobile_bg:							rgba(0, 0, 0, 0.5);
+/*account layout*/
+$account_layout_link:								$default_color2;
+$account_layout_link_hover:							$default_color;
+$account_layout_icon:								$default_color2;
+$account_layout_icon_hover:							$default_color;
+/*language and currency layout*/
+$multi_layout_link:									$default_color2;
+$multi_layout_link_hover:							$default_color;
+$multi_layout_link_hover_active:					$default_color;
+$multi_layout_icon:									$default_color2;
+$multi_layout_icon_hover:							$default_color;
+$multi_layout_icon_active:							$default_color;
+$multi_layout_mobile_separator:						$border;
+$multi_layout_mobile_title_color:					$default_color2;
+$multi_layout_mobile_close:							$default_text_color;
+$multi_layout_mobile_close_hover:					$default_color;
+$multi_layout_mobile_close_icon:					$multi_layout_mobile_close;
+$multi_layout_mobile_close_icon_hover:				$multi_layout_mobile_close_hover;
+$multi_layout_mobile_close_separator:				$border;
+/*cart layout*/
+$header_cart_badge_bg:								$default_color;
+$header_cart_badge_text:							#ffffff;
+$header_cart_dropdown_empty_icon:					#cdcdcd;
+$header_cart_dropdown_empty_text:					$default_text_color;
+$header_cart_title:									$default_color2;
+$header_cart_title_hover:							$default_color;
+$header_cart_add_info_text:							#999999;
+$header_cart_quantity:								$default_text_color;
+$header_cart_price:									$default_color2;
+$header_cart_btn_close:								$default_color2;
+$header_cart_btn_close_hover:						$default_color;
+$header_cart_separator:								$border;
+$header_cart_total_title:							$default_color2;
+$header_cart_total_price:							$default_color2;
+/*search layout*/
+$search_desctope_popup_shadow:						rgba(0, 0, 0, 0.08);
+$search_desctope_popup_bg:							#ffffff;
+$search_desctope_search_input_border:				#eceaea;
+$search_desctope_search_input_text:					$default_color2;
+$search_desctope_search_input_placeholder:			$default_color2;
+$search_desctope_search_btn_search:					#333333;
+$search_desctope_search_btn_search_hover:			$default_color;
+$search_desctope_search_btn_close:					$default_text_color;
+$search_desctope_search_btn_close_hover:			$default_color;
+$search_mobile_popup_bg:							#ffffff;
+$search_mobile_popup_bg_stuck:						#ffffff;
+$search_mobile_search_input_text:					$default_text_color;
+$search_mobile_search_input_placeholder:			$default_color2;
+$search_mobile_search_btn_search:					$default_color;
+$search_mobile_search_btn_close:					$default_text_color;
+$search_mobile_search_btn_close_hover:				$default_color;
+$search_mobile_results_bg:							#ffffff;
+$search_mobile_results_shadow:						rgba(0, 0, 0, 0.04);
+$search_mobile_results_separator_stuck:				$border;
+$search_mobile_results_item_hover:					#f7f8fa;
+$search_mobile_results_text:						$default_text_color;
+$search_mobile_results_title:						#333333;
+$search_mobile_results_price:						$default_color2;
+$search_mobile_results_price_new:					#f8353e;
+$search_mobile_results_price_old:					$search_mobile_results_price;
+$search_desctope_results_bg:						#ffffff;
+$search_desctope_results_text:						$default_text_color;
+$search_desctope_results_title:						#333333;
+$search_desctope_results_title_hover:				$default_color;
+$search_desctope_results_price:						$default_color2;
+$search_desctope_results_price_new:					#f8353e;
+$search_desctope_results_price_old:					$default_color2;
+$search_results_btn_text:							$default_color;
+$search_results_btn_text_hover:						$default_color2;
+/*desctope menu */
+$menu_desctope_promo_text:							$default_text_color;
+$menu_desctope_promo_title:							$default_color2;
+$menu_desctope_listing_img_border:					$border;
+$menu_desctope_listing_img_border_hover:			$default_color2;
+$menu_desctope_dropdown_bg:							#ffffff;
+$menu_desctope_stuck_bg:							#ffffff;
+$menu_desctope_stuck_shadow:						rgba(0, 0, 0, 0.3);
+$menu_desctope_dropdown_shadow:						rgba(0, 0, 0, 0.08);
+$menu_desctope_dropdown_badge_text:					#ffffff;
+$menu_desctope_dropdown_badge_bg:					transparent;
+$menu_desctope_dropdown_badge_new_text:				$menu_desctope_dropdown_badge_text;
+$menu_desctope_dropdown_badge_new_bg:				#1393f5;
+$menu_desctope_dropdown_badge_fatured_text:			$menu_desctope_dropdown_badge_text;
+$menu_desctope_dropdown_badge_fatured_bg:			#fdbc20;
+$menu_desctope_dropdown_badge_sale_text:			$menu_desctope_dropdown_badge_text;
+$menu_desctope_dropdown_badge_sale_bg:				#f8353e;
+$menu_desctope_dropdown_product_title:				$default_title_color;
+$menu_desctope_dropdown_product_title_hover:		$default_color;
+$menu_desctope_dropdown_product_title_active:		$menu_desctope_dropdown_product_title_hover;
+$menu_desctope_dropdown_submenu_title:				$default_title_color;
+$menu_desctope_dropdown_submenu_title_hover:		$default_color;
+$menu_desctope_dropdown_submenu_title_active:		$menu_desctope_dropdown_submenu_title_hover;
+$menu_desctope_dropdown_link:						$default_text_color;
+$menu_desctope_dropdown_link_hover:					$default_color;
+$menu_desctope_dropdown_link_arrow:					$default_color2;
+$menu_desctope_dropdown_submenu_bg:					#ffffff;
+$menu_desctope_dropdown_submenu_shadow:				rgba(0, 0, 0, 0.08);
+$menu_desctope_dropdown_submenu_link:				$default_text_color;
+$menu_desctope_dropdown_submenu_link_hover:			$default_color;
+$menu_desctope_dropdown_img_preview:				rgba(0, 0, 0, 0.08);
+$menu_desctope_link_text:							$default_color2;
+$menu_desctope_link_bg:								transparent;
+$menu_desctope_link_text_hover:						$default_color;
+$menu_desctope_link_bg_hover:						transparent;
+$menu_desctope_link_text_active:					$menu_desctope_link_text_hover;
+$menu_desctope_link_bg_active:						$menu_desctope_link_bg_hover;
+$menu_desctope_link_text_selected:					$menu_desctope_link_text_hover;
+$menu_desctope_link_bg_selected:					$menu_desctope_link_bg_hover;
+$menu_desctope_hover_02_link_text:					$default_color2;
+$menu_desctope_hover_02_link_bg:					transparent;
+$menu_desctope_hover_02_link_text_hover:			#ffffff;
+$menu_desctope_hover_02_link_bg_hover:				$default_color;
+$menu_desctope_hover_02_link_text_active:			$menu_desctope_hover_02_link_text_hover;
+$menu_desctope_hover_02_link_bg_active:				$menu_desctope_hover_02_link_bg_hover;
+$menu_desctope_hover_02_link_text_selected:			$menu_desctope_hover_02_link_text_hover;
+$menu_desctope_hover_02_link_bg_selected:			$menu_desctope_hover_02_link_bg_hover;
+$h_scheme01_bg:													#303030;
+$h_scheme01_text:												#888888;
+$h_scheme01_box_info_link:										#888888;
+$h_scheme01_box_info_link_hover:								$h_scheme01_box_info_link;
+$h_scheme01_box_info_link_icon:									#ffffff;
+$h_scheme01_social_icon_link:									$default_text_color;
+$h_scheme01_social_icon_link_hover:								#ffffff;
+$h_scheme01_menu_desctope_link_text:							#ffffff;
+$h_scheme01_menu_desctope_link_bg:								transparent;
+$h_scheme01_menu_desctope_link_text_hover:						$default_color;
+$h_scheme01_menu_desctope_link_bg_hover:						transparent;
+$h_scheme01_menu_desctope_link_text_active:						$h_scheme01_menu_desctope_link_text_hover;
+$h_scheme01_menu_desctope_link_bg_active:						$h_scheme01_menu_desctope_link_bg_hover;
+$h_scheme01_menu_desctope_link_text_selected:					$h_scheme01_menu_desctope_link_text_hover;
+$h_scheme01_menu_desctope_link_bg_selected:						$h_scheme01_menu_desctope_link_bg_hover;
+$h_scheme01_menu_desctope_hover_02_link_text:					#ffffff;
+$h_scheme01_menu_desctope_hover_02_link_bg:						transparent;
+$h_scheme01_menu_desctope_hover_02_link_text_hover:				#ffffff;
+$h_scheme01_menu_desctope_hover_02_link_bg_hover:				$default_color;
+$h_scheme01_menu_desctope_hover_02_link_text_active:			$h_scheme01_menu_desctope_hover_02_link_text_hover;
+$h_scheme01_menu_desctope_hover_02_link_bg_active:				$h_scheme01_menu_desctope_hover_02_link_bg_hover;
+$h_scheme01_menu_desctope_hover_02_link_text_selected:			$h_scheme01_menu_desctope_hover_02_link_text_hover;
+$h_scheme01_menu_desctope_hover_02_link_bg_selected:			$h_scheme01_menu_desctope_hover_02_link_bg_hover;
+$h_scheme01_dropdown_toggle_btn_text:							#ffffff;
+$h_scheme01_dropdown_toggle_btn_text_hover:						$default_color;
+$h_scheme01_menu_toggle:										#ffffff;
+$h_scheme02_bg:													#f7f8fa;
+$h_scheme02_text:												#888888;
+$h_scheme02_box_info_link:										#888888;
+$h_scheme02_box_info_link_hover:								$h_scheme02_box_info_link;
+$h_scheme02_box_info_link_icon:									$default_color;
+$h_scheme02_social_icon_link:									#cdcdcd;
+$h_scheme02_social_icon_link_hover:								$default_color2;
+$h_scheme02_menu_desctope_link_text:							$default_color2;
+$h_scheme02_menu_desctope_link_bg:								transparent;
+$h_scheme02_menu_desctope_link_text_hover:						$default_color;
+$h_scheme02_menu_desctope_link_bg_hover:						transparent;
+$h_scheme02_menu_desctope_link_text_active:						$h_scheme02_menu_desctope_link_text_hover;
+$h_scheme02_menu_desctope_link_bg_active:						$h_scheme02_menu_desctope_link_bg_hover;
+$h_scheme02_menu_desctope_link_text_selected:					$h_scheme02_menu_desctope_link_text_hover;
+$h_scheme02_menu_desctope_link_bg_selected:						$h_scheme02_menu_desctope_link_bg_hover;
+$h_scheme02_menu_desctope_hover_02_link_text:					$default_color2;
+$h_scheme02_menu_desctope_hover_02_link_bg:						transparent;
+$h_scheme02_menu_desctope_hover_02_link_text_hover:				#ffffff;
+$h_scheme02_menu_desctope_hover_02_link_bg_hover:				$default_color;
+$h_scheme02_menu_desctope_hover_02_link_text_active:			$h_scheme02_menu_desctope_hover_02_link_text_hover;
+$h_scheme02_menu_desctope_hover_02_link_bg_active:				$h_scheme02_menu_desctope_hover_02_link_bg_hover;
+$h_scheme02_menu_desctope_hover_02_link_text_selected:			$h_scheme02_menu_desctope_hover_02_link_text_hover;
+$h_scheme02_menu_desctope_hover_02_link_bg_selected:			$h_scheme02_menu_desctope_hover_02_link_bg_hover;
+$h_scheme02_dropdown_toggle_btn_text:							$default_color2;
+$h_scheme02_dropdown_toggle_btn_text_hover:						$default_color;
+$h_scheme03_bg:													transparent;
+$h_scheme03_text:												#888888;
+$h_scheme03_menu_desctope_link_text:							#ffffff;
+$h_scheme03_menu_desctope_link_bg:								transparent;
+$h_scheme03_menu_desctope_link_text_hover:						$default_color;
+$h_scheme03_menu_desctope_link_bg_hover:						transparent;
+$h_scheme03_menu_desctope_link_text_active:						$h_scheme03_menu_desctope_link_text_hover;
+$h_scheme03_menu_desctope_link_bg_active:						$h_scheme03_menu_desctope_link_bg_hover;
+$h_scheme03_menu_desctope_link_text_selected:					$h_scheme03_menu_desctope_link_text_hover;
+$h_scheme03_menu_desctope_link_bg_selected:						$h_scheme03_menu_desctope_link_bg_hover;
+$h_scheme03_menu_desctope_hover_02_link_text:					#ffffff;
+$h_scheme03_menu_desctope_hover_02_link_bg:						transparent;
+$h_scheme03_menu_desctope_hover_02_link_text_hover:				#ffffff;
+$h_scheme03_menu_desctope_hover_02_link_bg_hover:				$default_color;
+$h_scheme03_menu_desctope_hover_02_link_text_active:			$h_scheme03_menu_desctope_hover_02_link_text_hover;
+$h_scheme03_menu_desctope_hover_02_link_bg_active:				$h_scheme03_menu_desctope_hover_02_link_bg_hover;
+$h_scheme03_menu_desctope_hover_02_link_text_selected:			$h_scheme03_menu_desctope_hover_02_link_text_hover;
+$h_scheme03_menu_desctope_hover_02_link_bg_selected:			$h_scheme03_menu_desctope_hover_02_link_bg_hover;
+$h_scheme03_dropdown_toggle_btn_text:							#ffffff;
+$h_scheme03_dropdown_toggle_btn_text_hover:						$default_color;
+$header_mobile_separator:										$border;
+$header_mobile_menu_toggle_icon:								$default_color2;
+$header_mobile_menu_toggle_icon_hover:							$default_color;
+$header_mobile_stuck_bg:										#ffffff;
+$mobile_menu_bg:												#ffffff;
+$mobile_menu_fullscreen_bg:										rgba(0, 0, 0, 0.55);
+$mobile_menu_btn_text:											$default_text_color;
+$mobile_menu_btn_text_hover:									$default_color;
+$mobile_menu_btn_bg:											transparent;
+$mobile_menu_btn_bg_hover:										transparent;
+$mobile_menu_btn_icon:											$mobile_menu_btn_text;
+$mobile_menu_btn_icon_hover:									$mobile_menu_btn_text_hover;
+$mobile_menu_btn_separator:										$border;
+$mobile_menu_close_text:										$mobile_menu_btn_text;
+$mobile_menu_close_text_hover:									$mobile_menu_btn_text_hover;
+$mobile_menu_close_bg:											$mobile_menu_btn_bg;
+$mobile_menu_close_bg_hover:									$mobile_menu_btn_bg_hover;
+$mobile_menu_close_icon:										$mobile_menu_btn_icon;
+$mobile_menu_close_icon_hover:									$mobile_menu_btn_icon_hover;
+$mobile_menu_close_separator:									$mobile_menu_btn_separator;
+$mobile_menu_prev_text:											$mobile_menu_btn_text;
+$mobile_menu_prev_text_hover:									$mobile_menu_btn_text_hover;
+$mobile_menu_prev_bg:											$mobile_menu_btn_bg;
+$mobile_menu_prev_bg_hover:										$mobile_menu_btn_bg_hover;
+$mobile_menu_prev_icon:											$mobile_menu_btn_icon;
+$mobile_menu_prev_icon_hover:									$mobile_menu_btn_icon_hover;
+$mobile_menu_prev_separator:									$mobile_menu_btn_separator;
+$mobile_menu_next_text:											$default_color2;
+$mobile_menu_next_text_hover:									$mobile_menu_btn_text_hover;
+$mobile_menu_next_bg:											$mobile_menu_btn_bg;
+$mobile_menu_next_bg_hover:										$mobile_menu_btn_bg_hover;
+$mobile_menu_next_icon:											$mobile_menu_btn_icon;
+$mobile_menu_next_icon_hover:									$mobile_menu_btn_icon_hover;
+$mobile_menu_next_separator:									$mobile_menu_btn_separator;
+$mobile_menu_original_link_text:								$default_color2;
+$mobile_menu_original_link_text_hover:							$mobile_menu_btn_text_hover;
+$mobile_menu_original_link_bg:									$mobile_menu_btn_bg;
+$mobile_menu_original_link_bg_hover:							$mobile_menu_btn_bg_hover;
+$mobile_menu_original_link_icon:								$mobile_menu_btn_icon;
+$mobile_menu_original_link_icon_hover:							$mobile_menu_btn_icon_hover;
+$mobile_menu_original_link_separator:							$mobile_menu_btn_separator;
+$mobile_menu_link:												$default_color2;
+$mobile_menu_link_hover:										$default_color;
+$mobile_menu_link_bg:											transparent;
+$mobile_menu_link_bg_hover:										transparent;
+$mobile_menu_link_level_01:										$mobile_menu_link;
+$mobile_menu_link_level_01_hover:								$mobile_menu_link_hover;
+$mobile_menu_link_level_01_bg:									$mobile_menu_link_bg;
+$mobile_menu_link_level_01__bg_hover:							$mobile_menu_link_bg_hover;
+$mobile_menu_link_level_01_icon:								$mobile_menu_link_level_01;
+$mobile_menu_link_level_01_icon_hover:							$mobile_menu_link_level_01_hover;
+$mobile_menu_badge_text:										#ffffff;
+$mobile_menu_badge_text_new:									$mobile_menu_badge_text;
+$mobile_menu_badge_bg_new:										#1393f5;
+$mobile_menu_badge_text_fatured:								$mobile_menu_badge_text;
+$mobile_menu_badge_bg_fatured:									#fdbc20;
+$mobile_menu_badge_text_sale:									$mobile_menu_badge_text;
+$mobile_menu_badge_bg_sale:										#f8353e;
+/*
+	Footer
+*/
+$f_newsletter_errors_bg:										#f8353e;
+$f_newsletter_errors_text:										#ffffff;
+$f_newsletter_errors_icon:										$f_newsletter_errors_text;
+$f_scheme01_text:												$default_text_color;
+$f_scheme01_link:												$default_color;
+$f_scheme01_link_hover:											$default_color2;
+$f_scheme01_bg:													#f7f8fa;
+$f_scheme01_title_text:											$default_title_color;
+$f_scheme01_title_text_hover:									$default_color;
+$f_scheme01_list_text:											$default_text_color;
+$f_scheme01_list_text_hover:									$default_color;
+$f_scheme01_address_title:										$default_title_color;
+$f_scheme01_newsletter_input_text:								$default_text_color;
+$f_scheme01_newsletter_input_text_focus:						$f_scheme01_newsletter_input_text;
+$f_scheme01_newsletter_input_bg:								#ffffff;
+$f_scheme01_newsletter_input_bg_focus:							#ffffff;
+$f_scheme01_newsletter_input_border:							#ffffff;
+$f_scheme01_newsletter_input_border_focus:						$default_color;
+$f_scheme01_newsletter_input_placeholder:						$default_text_color;
+$f_scheme01_newsletter_btn_text:								#ffffff;
+$f_scheme01_newsletter_btn_text_hover:							#ffffff;
+$f_scheme01_newsletter_btn_bg:									$default_color;
+$f_scheme01_newsletter_btn_bg_hover:							#000000;
+$f_scheme01_social_icon:										#d8d8d8;
+$f_scheme01_social_icon_hover:									$default_color2;
+$f_scheme02_text:												#ffffff;
+$f_scheme02_link:												#ffffff;
+$f_scheme02_link_hover:											$default_color2;
+$f_scheme02_bg:													$default_color;
+$f_scheme02_title_text:											#ffffff;
+$f_scheme02_title_text_hover:									$default_color2;
+$f_scheme02_list_text:											#ffffff;
+$f_scheme02_list_text_hover:									$default_color2;
+$f_scheme02_address_title:										$default_title_color;
+$f_scheme02_newsletter_input_text:								$default_text_color;
+$f_scheme02_newsletter_input_text_focus:						$f_scheme02_newsletter_input_text;
+$f_scheme02_newsletter_input_bg:								#ffffff;
+$f_scheme02_newsletter_input_bg_focus:							#ffffff;
+$f_scheme02_newsletter_input_border:							#ffffff;
+$f_scheme02_newsletter_input_border_focus:						$default_color2;
+$f_scheme02_newsletter_input_placeholder:						$default_text_color;
+$f_scheme02_newsletter_btn_text:								#ffffff;
+$f_scheme02_newsletter_btn_text_hover:							#ffffff;
+$f_scheme02_newsletter_btn_bg:									#303030;
+$f_scheme02_newsletter_btn_bg_hover:							#000000;
+$f_scheme02_social_icon:										#ffffff;
+$f_scheme02_social_icon_hover:									#1c302d;
+$f_scheme03_text:												#888888;
+$f_scheme03_link:												$default_color;
+$f_scheme03_link_hover:											#ffffff;
+$f_scheme03_bg:													#303030;
+$f_scheme03_title_text:											#ffffff;
+$f_scheme03_title_text_hover:									$default_color2;
+$f_scheme03_list_text:											#888888;
+$f_scheme03_list_text_hover:									$default_color;
+$f_scheme03_address_title:										#ffffff;
+$f_scheme03_newsletter_input_text:								$default_text_color;
+$f_scheme03_newsletter_input_text_focus:						$f_scheme03_newsletter_input_text;
+$f_scheme03_newsletter_input_bg:								#ffffff;
+$f_scheme03_newsletter_input_bg_focus:							#ffffff;
+$f_scheme03_newsletter_input_border:							#ffffff;
+$f_scheme03_newsletter_input_border_focus:						$default_color;
+$f_scheme03_newsletter_input_placeholder:						$default_text_color;
+$f_scheme03_newsletter_btn_text:								#ffffff;
+$f_scheme03_newsletter_btn_text_hover:							#ffffff;
+$f_scheme03_newsletter_btn_bg:									$default_color;
+$f_scheme03_newsletter_btn_bg_hover:							#000000;
+$f_scheme03_social_icon:										$default_text_color;
+$f_scheme03_social_icon_hover:									#ffffff;
+$f_scheme03_copyright_text:										#888888;
+$f_scheme04_text:												#888888;
+$f_scheme04_link:												#888888;
+$f_scheme04_link_hover:											#ffffff;
+$f_scheme04_bg:													#222222;
+$f_scheme04_title_text:											#ffffff;
+$f_scheme04_title_text_hover:									$default_color2;
+$f_scheme04_list_text:											#888888;
+$f_scheme04_list_text_hover:									$default_color;
+$f_scheme04_address_title:										#ffffff;
+$f_scheme04_newsletter_input_text:								#ffffff;
+$f_scheme04_newsletter_input_text_focus:						$f_scheme04_newsletter_input_text;
+$f_scheme04_newsletter_input_bg:								#ffffff;
+$f_scheme04_newsletter_input_bg_focus:							#ffffff;
+$f_scheme04_newsletter_input_border:							#ffffff;
+$f_scheme04_newsletter_input_border_focus:						$default_color;
+$f_scheme04_newsletter_input_placeholder:						$default_text_color;
+$f_scheme04_newsletter_btn_text:								#ffffff;
+$f_scheme04_newsletter_btn_text_hover:							#ffffff;
+$f_scheme04_newsletter_btn_bg:									$default_color;
+$f_scheme04_newsletter_btn_bg_hover:							#000000;
+$f_scheme04_social_icon:										$default_text_color;
+$f_scheme04_social_icon_hover:									#ffffff;
+$f_scheme04_copyright_text:										#888888;
+$f_scheme04_logo_text:											#ffffff;
+$f_mobile_bg:													#f7f8fa;
+$f_mobile_text:													#888888;
+$f_mobile_bottom_bg:											#ffffff;
+$f_mobile_bottom_text:											#888888;
+$f_mobile_collapse_title_text:									$default_color2;
+$f_mobile_collapse_title_text_hover:							$default_color;
+$f_mobile_collapse_title_icon:									$default_text_color;
+$f_mobile_collaps_newsletter_input_text:						$default_text_color;
+$f_mobile_collaps_newsletter_input_text_focus:					$f_mobile_collaps_newsletter_input_text;
+$f_mobile_collaps_newsletter_input_bg:							#ffffff;
+$f_mobile_collaps_newsletter_input_bg_focus:					#ffffff;
+$f_mobile_collaps_newsletter_input_border:						#ffffff;
+$f_mobile_collaps_newsletter_input_border_focus:				$default_color;
+$f_mobile_collaps_newsletter_input_placeholder:					$default_text_color;
+$f_mobile_collaps_newsletter_btn_text:							#ffffff;
+$f_mobile_collaps_newsletter_btn_text_hover:					#ffffff;
+$f_mobile_collaps_newsletter_btn_bg:							$default_color;
+$f_mobile_collaps_newsletter_btn_bg_hover:						#000000;
+$f_mobile_collaps_list_text:									#888888;
+$f_mobile_collaps_list_text_hover:								$default_color;
+$f_mobile_collaps_address_link:									$default_color;
+$f_mobile_collaps_address_link_hover:							$default_color2;
+$f_mobile_collaps_address_title:								$default_color2;
+$f_mobile_collaps_social_icon:									$default_text_color;
+$f_mobile_collaps_social_icon_hover:							$default_color2;
+$f_mobile_logo_text:											$default_color;
+
+$f_mobile_dark_bg:												#303030;
+$f_mobile_dark_bottom_bg:										#222222;
+$f_mobile_dark_text:											#888888;
+$f_mobile_dark_collapse_title_text:							#ffffff;
+$f_mobile_dark_collapse_border:								rgba(233, 231, 231, 0.14);
+/*
+	Product item
+*/
+// product desktop
+$product_label_text:											#ffffff;
+$product_label_new_text:										$product_label_text;
+$product_label_new_bg:											#03a9f5;
+$product_label_sale_text:										$product_label_text;
+$product_label_sale_bg:											#f8353e;
+$product_label_fatured_text:									$product_label_text;
+$product_label_fatured_bg:										#fdbc20;
+$product_label_stock_text:										$product_label_text;
+$product_label_stock_bg:										$default_color2;
+$product_label_in_stock_text:									$product_label_text;
+$product_label_in_stock_bg:										#0ec482;
+$product_description_bg:										$default_bg_color;
+$product_add_info_text:											#999999;
+$product_add_info_text_hover:									$default_color;
+$product_title_text:											$default_title_color;
+$product_title_text_hover:										$default_color;
+$product_price_text:											$default_color2;
+$product_new_price_text:										#f8353e;
+$product_old_price_text:										$product_price_text;
+$product_btn_addtocart_text:									$default_color;
+$product_btn_addtocart_text_hover:								$default_color2;
+$product_btn_addtocart_icon:									$product_btn_addtocart_text;
+$product_btn_addtocart_icon_hover:								$product_btn_addtocart_text_hover;
+$product_btn02_addtocart_text: 									#ffffff;
+$product_btn02_addtocart_bg: 									$default_color;
+$product_btn02_addtocart_icon: 									#ffffff;
+$product_btn02_addtocart_bg_hover:  							#2267d8;
+$product_btn02_addtocart_text_hover: 							#ffffff;
+$product_btn02_addtocart_icon_hover: 							#ffffff;
+
+$product_btn_quickview_text:									$default_color2;
+$product_btn_quickview_text_hover:								#ffffff;
+$product_btn_quickview_view_text_hover:							$default_color;
+$product_btn_quickview_bg:										#ffffff;
+$product_btn_quickview_bg_hover:								$default_color;
+
+$product_btn_wishlist_text:										$default_color2;
+$product_btn_wishlist_text_hover:								#ffffff;
+$product_btn_wishlist_text_active:								#ffffff;
+$product_btn_wishlist_view_text_hover:							$default_color;
+$product_btn_wishlist_view_text_active:							$default_color;
+$product_btn_wishlist_bg:										#ffffff;
+$product_btn_wishlist_bg_hover:									$default_color;
+$product_btn_wishlist_bg_active:								$default_color;
+
+$product_btn_compare_text:										$default_color2;
+$product_btn_compare_text_hover:								#ffffff;
+$product_btn_compare_text_active:								#ffffff;
+$product_btn_compare_view_text_hover:							$default_color;
+$product_btn_compare_view_text_active:							$default_color;
+$product_btn_compare_bg:										#ffffff;
+$product_btn_compare_bg_hover:									$default_color;
+$product_btn_compare_bg_active:									$default_color;
+
+
+$product_select_bg: 											#f7f8fa;
+$product_select_text: 											#777777;
+// product desktop design02
+$product_design02_label_text:									#ffffff;
+$product_design02_label_new_text:								$product_design02_label_text;
+$product_design02_label_new_bg:									#1393f5;
+$product_design02_label_sale_text:								$product_design02_label_text;
+$product_design02_label_sale_bg:								#f8353e;
+$product_design02_label_fatured_text:							$product_design02_label_text;
+$product_design02_label_fatured_bg:								#fdbc20;
+$product_design02_label_stock_text:								$product_design02_label_text;
+$product_design02_label_stock_bg:								$default_color2;
+$product_design02_bg:											#f7f8fa;
+$product_design02_add_info_text:								$default_color2;
+$product_design02_add_info_text_hover:							$default_color;
+$product_design02_title_text:									$default_color2;
+$product_design02_title_text_hover:								$default_color;
+$product_design02_price_text:									$default_color2;
+$product_design02_new_price_text:								#f8353e;
+$product_design02_old_price_text:								$product_design02_price_text;
+$product_design02_btn_addtocart_text:							$default_color;
+$product_design02_btn_addtocart_text_hover:						$default_color2;
+$product_design02_btn_addtocart_icon:							$product_design02_btn_addtocart_text;
+$product_design02_btn_addtocart_icon_hover:						$product_design02_btn_addtocart_text_hover;
+$product_design02_btn_quickview_text:							$default_color2;
+$product_design02_btn_quickview_text_hover:						$default_color;
+$product_design02_btn_quickview_text_active:					$default_color;
+$product_design02_btn_wishlist_text:							$default_color2;
+$product_design02_btn_wishlist_text_hover:						$default_color;
+$product_design02_btn_wishlist_text_active:						$default_color;
+$product_design02_btn_compare_text:								$default_color2;
+$product_design02_btn_compare_text_hover:						$default_color;
+$product_design02_btn_compare_text_active:						$default_color;
+
+
+$product_design02_btn_link:										$default_color2;
+$product_design02_btn_link_hover:								$default_color;
+//options swatch design02
+$product_design02_swatch_bg:									#ffffff;
+$product_design02_swatch_bg_hover:								$default_color;
+$product_design02_swatch_bg_active:								$default_color;
+$product_design02_swatch_text:									$default_color2;
+$product_design02_swatch_text_hover:							#ffffff;
+$product_design02_swatch_text_active:							#ffffff;
+$product_design02_swatch_hover_border01:						#ffffff;
+$product_design02_swatch_active_border01:						$product_design02_swatch_hover_border01;
+//options swatch
+$tt_options_swatch_bg:											#f7f8fa;
+$tt_options_swatch_bg_hover:									$default_color;
+$tt_options_swatch_text:										$default_text_color;
+$tt_options_swatch_text_hover:									#ffffff;
+$tt_options_swatch_border:										#e9e7e6; //if coincides bg
+$tt_options_swatch_hover_border01:								#ffffff;
+$tt_options_swatch_hover_border02:								$default_color;
+// product mobile
+$product_mobile_label_text:										#ffffff;
+$product_mobile_label_new_text:									$product_mobile_label_text;
+$product_mobile_label_new_bg:									#1393f5;
+$product_mobile_label_sale_text:								$product_mobile_label_text;
+$product_mobile_label_sale_bg:									#f8353e;
+$product_mobile_label_fatured_text:								$product_mobile_label_text;
+$product_mobile_label_fatured_bg:								#fdbc20;
+$product_mobile_label_stock_text:								$product_mobile_label_text;
+$product_mobile_label_stock_bg:									$default_color2;
+$product_mobile_description_bg:									$default_bg_color;
+$product_mobile_add_info_text:									#999999;
+$product_mobile_add_info_text_hover:							$default_color;
+$product_mobile_title_text:										$default_title_color;
+$product_mobile_title_text_hover:								$default_color;
+$product_mobile_price_text:										$default_color2;
+$product_mobile_new_price_text:									#f8353e;
+$product_mobile_old_price_text:									$product_mobile_price_text;
+$product_mobile_btn_addtocart_text:								#ffffff;
+$product_mobile_btn_addtocart_text_hover:						#ffffff;
+$product_mobile_btn_addtocart_bg:								$default_color;
+$product_mobile_btn_addtocart_bg_hover:							#2267d8;
+$product_mobile_btn_addtocart_icon:								$product_mobile_btn_addtocart_text;
+$product_mobile_btn_addtocart_icon_hover:						$product_mobile_btn_addtocart_text_hover;
+$product_mobile_btn_quickview_text:								$default_color2;
+$product_mobile_btn_quickview_text_active:						$default_color;
+
+$product_mobile_btn_wishlist_text:								$default_color2;
+$product_mobile_btn_wishlist_text_active:						$default_color;
+
+$product_mobile_btn_compare_text:								$default_color2;
+$product_mobile_btn_compare_text_active:						$default_color;
+//countdown
+$countdown_section_bg:											rgba(255, 255, 255, 0.9);
+$countdown_section_text:										$default_color;
+/*
+	Product listing product
+*/
+/*Filters options*/
+$listing_filter_btn_toggle_text:								$default_color;
+$listing_filter_btn_toggle_text_hover:							$default_color2;
+$listing_filter_btn_toggle_icon:								$listing_filter_btn_toggle_text;
+$listing_filter_btn_toggle_icon_hover:							$listing_filter_btn_toggle_text_hover;
+$listing_filter_sort_select_text:								$default_text_color;
+$listing_filter_sort_select_text_hover:							$default_color2;
+$listing_filter_sort_btn_icon:									$default_color2;
+$listing_filter_modal_bg:										rgba(0, 0, 0, 0.5);
+$listing_filter_btn_close_desctope_bg:							#ffffff;
+$listing_filter_btn_close_desctope_text:						$default_color2;
+$listing_filter_btn_close_desctope_text_hover:					$default_color;
+$listing_filter_btn_close_desctope_icon:						$default_color2;
+$listing_filter_btn_close_desctope_icon_hover:					$default_color2;
+$listing_filter_btn_close_mobile_text:							$default_text_color;
+$listing_filter_btn_close_mobile_text_hover:					$default_color;
+$listing_filter_btn_close_mobile_bg:							#ffffff;
+$listing_filter_btn_close_mobile_border:						$border;
+$listing_filter_btn_close_mobile_icon:							$default_color2;
+$listing_filter_btn_close_mobile_icon_hover:					$default_color2;
+$listing_filter_btn_close_gradient_bg01:						rgba(255,255,255,0);
+$listing_filter_btn_close_gradient_bg02:						rgba(255,255,255,1);
+$listing_filter_col_bg_desctope:								#ffffff;
+$listing_filter_col_bg_mobile:									#ffffff;
+$listing_aside_collapse_title_text:								$default_title_color;
+$listing_aside_collapse_title_text_hover:						$default_color;
+$listing_aside_collapse_title_border:							$border;
+$listing_aside_collapse_title_icon:								$listing_aside_collapse_title_text;
+$listing_aside_collapse_title_icon_hover:						$listing_aside_collapse_title_icon;
+$listing_aside_list_text:										$default_text_color;
+$listing_aside_list_text_hover:									$default_color;
+$listing_aside_list_text_active:								$default_color;
+$listing_aside_list_icon:										$default_color2;
+$listing_aside_list_icon_hover:									$listing_aside_list_icon;
+$listing_aside_list_icon_active:								$listing_aside_list_text_active;
+$list_row_text:													$default_text_color;
+$list_row_text_hover:											$default_color;
+$list_row_text_active:											$list_row_text_hover;
+$listing_aside_img_block_title:									$default_title_color;
+$listing_aside_img_block_title_hover:							$default_color;
+$listing_aside_img_block_price:									$default_color2;
+$listing_aside_img_block_price_new:								#f8353e;
+$listing_aside_img_block_price_old:								$listing_aside_img_block_price;
+$listing_aside_mobile_filter_select_text:						$default_text_color;
+$listing_aside_mobile_filter_select_text_hover:					$default_color2;
+$listing_aside_mobile_filter_select_bg:							#f7f8fa;
+/*
+	rating
+*/
+$rating_icon:													#ffb503;
+$rating_icon_half:												$rating_icon;
+$rating_icon_empty:												#d4d4d4;
+/*
+	label
+*/
+$label_new_text:												#ffffff;
+$label_new_bg:													#1393f5;
+$label_sale_text:												#ffffff;
+$label_sale_bg:													#f8353e;
+$label_out_stock_text:											#ffffff;
+$label_out_stock_bg:											$default_color2;
+$label_our_fatured_text:										#ffffff;
+$label_our_fatured_bg:											#fdbc20;
+/*
+	Product single
+*/
+$product_single_title_text:										$default_title_color;
+$product_single_title_options_text:								$product_single_title_text;
+$product_single_title_price:									$default_color;
+$product_single_title_price_old:								$default_color;
+$product_single_title_price_sale:								#f8353e;
+$product_single_review_link:									$default_color;
+$product_single_review_link_hover:								$default_color2;
+$product_single_rating_icon:									$rating_icon;
+$product_single_rating_icon_half:								$rating_icon_half;
+$product_single_rating_icon_empty:								$rating_icon_empty;
+$product_single_input_counter_text:								$default_color2;
+$product_single_input_counter_bg:								#f7f8fa;
+$product_single_input_counter_btn:								$default_text_color;
+$product_single_input_counter_btn_hover:						$default_color2;
+$product_single_information_btn_text:							$default_color;
+$product_single_information_btn_text_hover:						$default_color2;
+$product_single_countdown_bg:									rgba(247, 248, 250, 1);
+$product_single_countdown_text:									$default_color2;
+$product_single_zoom_icon:										$default_color2;
+$product_single_zoom_icon_hover:								#ffffff;
+$product_single_zoom_bg:										#ffffff;
+$product_single_zoom_bg_hover:									$default_color;
+/* Collapse block */
+$tt_collapse_block_title:										#999999;
+$tt_collapse_block_title_hover:									$default_color2;
+$tt_collapse_block_title_active:								$tt_collapse_block_title_hover;
+$tt_collapse_block_separator:									$border;
+/* Review-block */
+$review_block_title:											$default_title_color;
+$review_block_link:												$default_color;
+$review_block_avatar_bg:										#f7f8fa;
+$review_block_avatar_icon:										$default_color2;
+$review_block_comments_info_text_color01:						$default_text_color;
+$review_block_comments_info_text_color02:						$default_color2;
+$review_block_comments_title:									$default_title_color;
+$review_block_message_info_text_color01:						$default_color2;
+$review_block_message_info_text_color02:						$default_color;
+$review_block_indicator_title:									$default_title_color;
+/* produc slider vertical (product.html)*/
+$produc_slider_vertical_active_img:								#ffffff;
+/* produc slider vertical (product-02.html)*/
+$produc_slider_img_active_img:									#ffffff;
+/* video link*/
+$video_link_icon:												$default_color;
+$video_link_icon_hover:											$default_color2;
+/*
+	Blog
+*/
+$blog_tag_text:													$default_color;
+$blog_tag_text_hover:											$default_color2;
+$blog_title_text:												$default_title_color;
+$blog_title_text_hover:											$default_color;
+$blog_meta_text:												#999999;
+$blog_meta_text_color2:											$default_color2;
+$blog_meta_comments_text:										$blog_meta_text;
+$blog_meta_comments_text_hover:									$default_color;
+$blog_meta_comments_icon:										$default_color2;
+$blog_meta_comments_icon_hover:									$default_color;
+$blog_post_video_icon:											#ffffff;
+$blog_post_video_icon_hover:									$default_color;
+$box_link_bg:													#f7f8fa;
+$box_link_bg_hover:												#222222;
+$box_link_text:													$default_color;
+$box_link_text_hover:											#ffffff;
+$blog_post_single_tag_text:										$blog_tag_text;
+$blog_post_single_tag_text_hover:								$blog_tag_text_hover;
+$blog_post_single_meta_text:									$blog_meta_text;
+$blog_post_single_meta_text_color2:								$blog_meta_text_color2;
+$blog_post_single_meta_tag_text:								$blog_tag_text;
+$blog_post_single_meta_tag_text_hover:							$blog_tag_text_hover;
+$blog_comments_avatar_icon:										$default_color2;
+$blog_comments_avatar_bg:										#f7f8fa;
+$blog_comments_title_text:										$default_text_color;
+$blog_comments_title_text_color2:								$default_color2;
+$blog_comments_btn:												$default_color;
+$blog_comments_btn_hover:										$default_color2;
+$blog_comments_separator:										$border;
+$blog_thumb_description_wrapper:								$default_bg_color;
+$blog_thumb_description_text:									$default_text_color;
+$blog_thumb_description_tag:									$blog_tag_text;
+$blog_thumb_description_tag_hover:								$blog_tag_text_hover;
+$blog_thumb_description_title:									$blog_title_text;
+$blog_thumb_description_title_hover:							$blog_title_text_hover;
+$blog_thumb_description_meta_text:								$blog_meta_text;
+$blog_thumb_description_meta_text_color2:						$blog_meta_text_color2;
+$blog_thumb_description_comments_text:							$blog_meta_comments_text;
+$blog_thumb_description_comments_text_hover:					$blog_meta_comments_text_hover;
+$blog_thumb_description_comments_icon:							$blog_meta_comments_icon;
+$blog_thumb_description_comments_icon_hover:					$blog_meta_comments_icon_hover;
+// left col blog
+$block_aside_separator:											$border;
+$tt_form_search_bg:												$default_bg_color;
+$tt_form_search_icon:											$default_color2;
+$tt_form_search_icon_hover:										$default_color;
+$tt_list_inline_text:											$default_text_color;
+$tt_list_inline_text_hover:										$default_color;
+$tt_pagination_link:											$default_color2;
+$tt_pagination_link_hover:										$default_color;
+$tt_pagination_link_active:										$tt_pagination_link_hover;
+$tt_pagination_icon:											$tt_pagination_link;
+$tt_pagination_icon_hover:										$tt_pagination_link_hover;
+// blog colums
+$blog_colums_post_video_icon:									$blog_post_video_icon;
+$blog_colums_post_video_icon_hover:								$blog_post_video_icon_hover;
+$blog_colums_post_content_bg:									$default_bg_color;
+$blog_colums_post_content_text:									$default_text_color;
+$blog_colums_post_tag_text:										$blog_tag_text;
+$blog_colums_post_tag_text_hover:								$blog_tag_text_hover;
+$blog_colums_post_title_text:									$blog_title_text;
+$blog_colums_post_title_text_hover:								$blog_title_text_hover;
+$blog_colums_post_meta_text:									$blog_meta_text;
+$blog_colums_post_meta_text_color2:								$blog_meta_text_color2;
+$blog_colums_post_meta_comments_text:							$blog_colums_post_meta_text;
+$blog_colums_post_meta_comments_text_hover:						$blog_meta_comments_text_hover;
+$blog_colums_post_meta_comments_icon:							$blog_meta_comments_icon;
+$blog_colums_post_meta_comments_icon_hover:						$blog_meta_comments_icon_hover;
+// blog filter
+$blog_filter_btn_text:											#999999;
+$blog_filter_btn_text_hover:									$default_color2;
+$blog_filter_btn_text_active:									$blog_filter_btn_text_hover;
+// blog aside
+$blog_aside_post_tag_text:										$default_color;
+$blog_aside_post_tag_text_hover:								$default_color2;
+$blog_aside_post_title:											$default_title_color;
+$blog_aside_post_title_hover:									$default_color;
+$blog_aside_post_link:											$default_text_color;
+$blog_aside_post_link_hover:									$default_text_color;
+$blog_aside_post_info_text:										$default_text_color;
+$blog_aside_post_info_text_color2:								$default_color2;
+/*
+Instagram
+*/
+$instagram_icon:												#ffffff;
+$instagram_bg:													rgba(0, 0, 0, 0.7);
+/*
+Lookbook
+*/
+$lookbook_hotspot_icon:											#ffffff;
+$lookbook_hotspot_border:										rgba(255, 255, 255, 0.8);
+$lookbook_hotspot_bg:											$default_color;
+$lookbook_hotspot_bg_hover:										$default_color2;
+$lookbook_hotspot_bg_active:									$default_color2;
+$lookbook_hotspot_btn_close_text:								$default_color2;
+$lookbook_hotspot_btn_close_text_hover:							$default_color;
+$lookbook_description_bg:										#ffffff;
+$lookbook_description_shadow:									rgba(0, 0, 0, 0.08);
+$lookbook_description_title_text:								$default_title_color;
+$lookbook_description_title_text_hover:							$default_color;
+$lookbook_description_price:									$default_color2;
+$lookbook_description_price_new:								#f8353e;
+$lookbook_description_price_old:								$lookbook_description_price;
+$lookbook_mobile_bg_item:										rgba(255, 255, 255, 0.8);
+/*
+Modal
+*/
+$modal_btn_close_icon:											#ffffff;
+$modal_btn_close_icon_hover:									$default_color;
+$modal_bg:														#ffffff;
+$modal_backdrop:												#000000;
+/*addtocart*/
+$modal_addtocart_desctope_messages_text:						$default_color2;
+$modal_addtocart_desctope_messages_icon:						$default_color;
+$modal_addtocart_desctope_title:								$default_title_color;
+$modal_addtocart_desctope_title_hover:							$default_color;
+$modal_addtocart_desctope_qty_text:								$default_color2;
+$modal_addtocart_desctope_total_text:							$default_color2;
+$modal_addtocart_desctope_separator:							$border;
+$modal_addtocart_mobile_messages_text:							$default_color2;
+$modal_addtocart_mobile_messages_icon:							$default_color;
+$modal_addtocart_cart_total_text:								$default_text_color;
+$modal_addtocart_cart_total_title:								$default_title_color;
+$modal_addtocart_cart_total_price:								$default_color;
+/*newsletter*/
+$modal_newsletter_title_small:									#ffffff;
+$modal_newsletter_title_large:									$default_color;
+$modal_newsletter_text_color01:									#ffffff;
+$modal_newsletter_text_color02:									$default_text_color;
+$modal_newsletter_social_icon:									#d8d8d8;
+$modal_newsletter_social_icon_hover:							$default_color;
+$modal_newsletter_checkbox_text:								#ffffff;
+$modal_newsletter_checkbox_label:								$modal_newsletter_checkbox_text;
+$modal_newsletter_checkbox_label_hover:							$default_color;
+/*layout product info (product-variable.html)*/
+$modal_porduct_info_title:										$default_title_color;
+$modal_porduct_info_table_thead_text:							$default_text_color;
+$modal_porduct_info_table_td_text:								$default_text_color;
+$modal_porduct_info_table_tr_bg:								#f7f8fa;
+$modal_porduct_info_02_title:									$default_title_color;
+$modal_porduct_info_02_list_text:								$default_text_color;
+$modal_porduct_info_02_list_text_hover:							$default_color;
+$modal_porduct_info_02_list_marker:								$default_text_color;
+/*subsribe_good*/
+$modal_subsribe_good_text:										$default_color2;
+$modal_subsribe_good_icon:										$default_color;
+/*
+Portfolio
+*/
+$portfolio_nav_btn_text:										#999999;
+$portfolio_nav_btn_text_hover:									$default_color2;
+$portfolio_nav_btn_text_active:									$portfolio_nav_btn_text_hover;
+$portfolio_item_bg:												rgba( 0, 0, 0, 0.7);
+$portfolio_item_text:											#ffffff;
+$portfolio_item_icon:											#ffffff;
+$portfolio_item_icon_hover:										$default_color;
+$portfolio_item_title:											#ffffff;
+$portfolio_item_title_hover:									$default_color;
+/*
+	magnific popup (portfolio pages)
+*/
+$magnific_popup_bg:												rgba(0, 0, 0, 0.5);
+$magnific_popup_shadow:											rgba(0, 0, 0, 0.3);
+$magnific_popup_arrow_icon: 									#ffffff;
+$magnific_popup_arrow_icon_hover:								$default_color;
+$magnific_popup_bt_close:										#ffffff;
+$magnific_popup_bt_close_hover:									$default_color;
+$magnific_popup_counter:										#ffffff;
+/*
+Promo
+*/
+$promo_bg_content:												rgba(255, 255, 255, 0.9);
+$promo_hover02_bg_content_hover:								rgba($default_color, 0.9);
+$promo_hover02_text_content_hover:								#ffffff;
+$promo_hover02_hover_bt_underline_border:						transparent;
+$promo_hover_bt_underline_border:								transparent;
+$promo_hover_bt_underline_text:									$default_color;
+$promo_text:													$default_text_color;
+$promo_title_large_text:										$default_title_color;
+$promo_title_large_text_hover:									$default_title_color;
+$promo_title_small_text:										$default_title_color;
+$promo_title_small_text_hover:									$default_title_color;
+/*promo full width (index-09.html)*/
+$promo_fullwidth_text:											$default_color2;
+$promo_fullwidth_title_small:									$default_title_color;
+$promo_fullwidth_title_large:									$default_title_color;
+/*promo full width (index-13.html)*/
+$promo_fullwidth02_text:										$default_text_color;
+$promo_fullwidth02_title_large:									$default_title_color;
+/*collection img (index-02.html)*/
+$collection_item_title:											$default_title_color;
+$collection_item_title_hover:									$default_color;
+$collection_item_info_text:										#999999;
+/* promo fixed */
+$promo_fixed_bg:												#ffffff;
+$promo_fixed_text:												#999999;
+$promo_fixed_link:												$default_color2;
+$promo_fixed_link_hover:										$default_color;
+$promo_fixed_text_info:											#999999;
+$promo_fixed_shadow:											rgba(0, 0, 0, 0.08);
+$promo_fixed_bt_close_icon:										#999999;
+$promo_fixed_bt_close_icon_hover:								$default_color;
+/*
+	Shop cart
+*/
+/* shopping_cart_01.html */
+$shopcart_border:												$border;
+$shopcart_border_box:											$shopcart_border;
+$shopcart_btn_close:											$default_color2;
+$shopcart_btn_close_hover:										$default_color;
+$shopcart_price:												$default_color2;
+$shopcart_title_text:											$default_title_color;
+$shopcart_title_text_hover:										$default_color;
+$shopcart_table01_text:											$default_color2;
+$shopcart_table01_total_price:									$default_color;
+/* shopping_cart_02.html */
+$shopcart02_border:												$border;
+$shopcart02_btn_close:											$default_color2;
+$shopcart02_btn_close_hover:									$default_color;
+$shopcart02_price:												$default_color2;
+$shopcart02_title_text:											$default_title_color;
+$shopcart02_title_text_hover:									$default_color;
+$shopcart02_list_description_text:								$default_text_color;
+/*
+	Shop account
+*/
+/* account_address.html, account.html, account_order.html */
+$shopping_layout_title_text:									$default_title_color;
+$shopping_layout_btn_text:										$default_color;
+$shopping_layout_btn_text_hover:								$default_color2;
+$shopping_layout_border:										$border;
+$shopping_layout_table_thead_text:								$default_color2;
+$shopping_layout_table_link:									$default_color;
+$shopping_layout_table_link_hover:								$default_color2;
+$shopping_layout_info_title:									$shopping_layout_title_text;
+$shopping_layout_info_description_text_color02:					$default_color;
+$shopping_layout_info_description_link:							$default_color;
+$shopping_layout_info_description_link_hover:					$default_color2;
+
+/*
+	slider revolution(index pages)
+*/
+$slider_revolution_nav_bullet_bg:								#dadada;
+$slider_revolution_nav_bullet_bg_active:						$default_color2;
+$slider_revolution_video_icon:									#c2c2c2;
+$slider_revolution_video_icon_hover:							$default_color;
+$slider_revolution_title:										$default_title_color;
+$slider_revolution_arrow:										#dadada;
+$slider_revolution_arrow_hover:									$default_color2;
+$slider_revolution_btn_bg:										$btn_colorbg;
+$slider_revolution_btn_bg_hover:								$btn_colorbg_hover;
+$slider_revolution_btn_text:									$btn_colortext;
+$slider_revolution_btn_text_hover:								$btn_colortext_hover;
+/*
+	slider main slick(index-14.html)
+*/
+$slick_main_title:												$default_title_color;
+$slick_main_title_small:										$slick_main_title;
+$slick_main_title_large:										$slick_main_title;
+$slick_main_text:												$default_color2;
+$slick_main_arrow:												#dadada;
+$slick_main_arrow_hover:										$default_color2;
+$slick_main_bullet_bg:											#dadada;
+$slick_main_bullet_bg_hover:									$default_color2;
+$slick_main_bullet_bg_active:									$slick_main_bullet_bg_hover;
+/*
+	slider slider
+*/
+$slick_default_arrow_bg:										#f7f8fa;
+$slick_default_arrow_text:										$default_color2;
+$slick_default_arrow_bg_hover:									$default_color;
+$slick_default_arrow_text_hover:								#ffffff;
+$slick_button_bg:												#f7f8fa;
+$slick_button_bg_hover:											$default_color;
+$slick_button_text:												$default_color2;
+$slick_button_text_hover:										#ffffff;
+$slick_quantity_text:											#989898;
+$slick_quantity_number:											$default_color2;
+$slick_button_vertical_text:									$default_color2;
+$slick_button_vertical_text_hover:								#ffffff;
+$slick_button_vertical_bg:										#f7f8fa;
+$slick_button_vertical_bg_hover:								$default_color;
+$slick_slider_dots_bg:											#dadada;
+$slick_slider_dots_bg_hover:									$default_color2;
+$slick_slider_dots_bg_active:									$slick_slider_dots_bg_hover;
+$slick_location01_arrow_bg:										#ffffff;
+$slick_location01_arrow_text:									$default_color2;
+$slick_location01_arrow_text_hover:								#ffffff;
+$slick_location01_arrow_bg_hover:								$default_color;
+$slick_location02_arrow_bg:										#f7f8fa;
+$slick_location02_arrow_bg_hover:								$default_color;
+$slick_location02_arrow_text:									$default_color2;
+$slick_location02_arrow_text_hover:								#ffffff;
+$slick_location03_arrow_bg:										transparent;
+$slick_location03_arrow_bg_hover:								transparent;
+$slick_location03_arrow_text:									$default_color2;
+$slick_location03_arrow_text_hover:								$default_color;
+$slick_locationTab_arrow_bg:									#f7f8fa;
+$slick_locationTab_arrow_bg_hover:								$default_color;
+$slick_locationTab_arrow_text:									$default_color2;
+$slick_locationTab_arrow_text_hover:							#ffffff;
+$slick_locationRightTop_arrow_bg:								#f7f8fa;
+$slick_locationRightTop_arrow_bg_hover:							$default_color;
+$slick_locationRightTop_arrow_text:								$default_color2;
+$slick_locationRightTop_arrow_text_hover:						#ffffff;
+$slick_locationCenter_arrow_bg:									transparent;
+$slick_locationCenter_arrow_bg_hover:							transparent;
+$slick_locationCenter_arrow_text:								#dadada;
+$slick_locationCenter_arrow_text_hover:							$default_color2;
+$slick_locationCenter02_arrow_bg:								#f7f8fa;
+$slick_locationCenter02_arrow_bg_hover:							$default_color;
+$slick_locationCenter02_arrow_text:								$default_color2;
+$slick_locationCenter02_arrow_text_hover:						#ffffff;
+$slick_type02_arrow_bg:											#f7f8fa;
+$slick_type02_arrow_bg_hover:									#f7f8fa;
+$slick_type02_arrow_text:										#dadada;
+$slick_type02_arrow_text_hover:									$default_color2;
+
+/*
+	tooltip
+*/
+$tooltip_bg:													#ffffff;
+$tooltip_text:													$default_color2;
+$tooltip_shadow:												rgba(0,0,0,0.13);
+
+/*---------------------------------------*/
+/*--------   Table of contents   --------*/
+/*
+1. External module
+	1.1 Bootstrap
+	1.2 Bootstrap datepicker
+	1.3 Slider Slick
+	1.4 Magnific popup
+	1.5 Perfect scrollbar
+	1.6 Slider Revolution
+2. Fonts icons
+3. Header
+4. Footer
+5. Blog pages
+6. Portfolio pages
+7. Product single pages
+8. Modal
+9. Listing product
+10. Product item
+11. Promo box
+12. Promo box fixed
+13. Shopping Cart pages
+14. Lookbook module
+15. Slider Revolution
+16. Slider Slick
+17. Loader module
+18. Boxed module
+19. Instafeed module
+20. The same product height
+21. Tooltip
+22. Wishlist page
+23. Compare page
+24. Menu categories
+25. Instagram shop
+26. Typography
+---------------------------------------*/
+
+
+/*---------------------------------------*/
+/*--------   1. External module  --------*/
+/*---------------------------------------*/
+/*-------  1.1 Bootstrap  --------*/
+@import "../external/bootstrap/scss/bootstrap.scss";
+/*-------  1.2 Bootstrap datepicker  --------*/
+@import "../external/bootstrap-datepicker/datepicker.scss";
+/*-------  1.3 Slider Slick  --------*/
+@import "../external/slick/slick.scss";
+/*-------  1.4 Magnific popup  --------*/
+@import "../external/magnific-popup/magnific-popup.scss";
+/*-------  1.5 Perfect scrollbar  --------*/
+@import "../external/perfect-scrollbar/perfect-scrollbar.scss";
+/*-------  1.6 Slider Revolution  --------*/
+@import "../external/rs-plugin/css/settings.scss";
+/*---------------------------------------*/
+/*--------     2. Fonts icons    --------*/
+/*---------------------------------------*/
+@import "../font/style.scss";
+/*---------------------------------------*/
+/*--------     3. Header         --------*/
+/*---------------------------------------*/
+@import "../scss/_header.scss";
+/*---------------------------------------*/
+/*--------     4. Footer         --------*/
+/*---------------------------------------*/
+@import "../scss/_footer.scss";
+/*---------------------------------------*/
+/*--------     5. Blog pages     --------*/
+/*---------------------------------------*/
+@import "../scss/_blog.scss";
+/*---------------------------------------*/
+/*--------     6. Portfolio pages  ------*/
+/*---------------------------------------*/
+@import "../scss/_portfolio.scss";
+/*---------------------------------------*/
+/*------   7. Product single pages   ----*/
+/*---------------------------------------*/
+@import "../scss/_product_single.scss";
+/*---------------------------------------*/
+/*--------      8. Modal         --------*/
+/*---------------------------------------*/
+@import "../scss/_modal.scss";
+/*---------------------------------------*/
+/*--------   9. Listing product   -------*/
+/*---------------------------------------*/
+@import "../scss/_listing_product.scss";
+/*---------------------------------------*/
+/*--------  10. Product item     --------*/
+/*---------------------------------------*/
+@import "../scss/_content_product_item.scss";
+/*---------------------------------------*/
+/*--------   11. Promo box       --------*/
+/*---------------------------------------*/
+@import "../scss/_promo.scss";
+/*---------------------------------------*/
+/*--------   12. Promo box fixed  -------*/
+/*---------------------------------------*/
+@import "../scss/_promo_fixed.scss";
+/*---------------------------------------*/
+/*-------  13. Shopping Cart pages  -----*/
+/*---------------------------------------*/
+@import "../scss/_shopcart_page.scss";
+/*---------------------------------------*/
+/*-------  14. Lookbook module      -----*/
+/*---------------------------------------*/
+@import "../scss/_lookbook.scss";
+/*---------------------------------------*/
+/*-------  15. Slider Revolution    -----*/
+/*---------------------------------------*/
+@import "../scss/_slider_revolution.scss";
+/*---------------------------------------*/
+/*-------    16. Slider Slick       -----*/
+/*---------------------------------------*/
+@import "../scss/_slider_slick.scss";
+/*---------------------------------------*/
+/*-------   17. Loader module       -----*/
+/*---------------------------------------*/
+@import "../scss/_loader.scss";
+/*---------------------------------------*/
+/*-------   18. Boxed module        -----*/
+/*---------------------------------------*/
+@import "../scss/_boxed.scss";
+@import "../scss/_demo_boxedbutton.scss";
+/*---------------------------------------*/
+/*-------  19. Instafeed module     -----*/
+/*---------------------------------------*/
+@import "../scss/_instafeed.scss";
+/*---------------------------------------*/
+/*----  20. The same product height  ----*/
+/*---------------------------------------*/
+@import "../scss/_option_product_height.scss";
+/*---------------------------------------*/
+/*----  21. Tooltip  ----*/
+/*---------------------------------------*/
+@import "../scss/_tooltip.scss";
+/*---------------------------------------*/
+/*----  22. Wishlist page  ----*/
+/*---------------------------------------*/
+@import "../scss/_wishlist.scss";
+/*---------------------------------------*/
+/*----  23. Compare page  ----*/
+/*---------------------------------------*/
+@import "../scss/_compare.scss";
+/*---------------------------------------*/
+/*----  24. Menu categories  ----*/
+/*---------------------------------------*/
+@import "../scss/_menu_categories.scss";
+/*---------------------------------------*/
+/*----  25. Instagram shop  ----*/
+/*---------------------------------------*/
+@import "../scss/_instagram_shop.scss";
+/*---------------------------------------*/
+/*-------     26. Typography        -----*/
+/*---------------------------------------*/
+@import "../scss/_typography.scss";
+/*---------------------------------------*/
+/*-------  27. Section Layout      -----*/
+/*---------------------------------------*/
+@import "../scss/_section-layout.scss";
+
+
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 0;
+	font-weight: normal;
+}
+.form-default .form-control{
+	border-radius: 0;
+}
+.btn{
+	border-radius: 0;
+	padding: 4px 31px 5px;
+	font-size: 17px;
+	background: #191919;
+	&:hover{
+		background: #444444;
+	}
+}
+#tt-pageContent > .container-indent:not(.nomargin):not([class^="tt-offset"]) {
+	@media (min-width: 1025px){
+		margin-top: 86px;
+	}
+	@media (max-width: 1024px){
+		margin-top: 70px;
+	}
+	@media (max-width: 575px){
+		margin-top: 50px;
+	}
+}
+.tt-block-title{
+	padding-bottom: 41px;
+	.tt-title{
+		font-size: 36px;
+		line-height: 60px;
+		letter-spacing: 0;
+		font-weight: normal;
+	}
+}
+
+
+/* header */
+.tt-logo img{
+	max-height: 46px;
+}
+.tt-mobile-header{
+	.tt-logo-container{
+		height: 60px;
+		.tt-logo img{
+			max-height: 35px;
+		}
+		.tt-logo-alignment{
+			top: 0;
+		}
+	}
+}
+header{
+	.tt-desktop-header{
+		.tt-logo{
+			margin-top: 4px;
+		}
+	}
+	.tt-desktop-header{
+		.tt-desctop-menu{
+			position: relative;
+			top: 11px;
+			nav{
+				> ul{
+					> li.dropdown{
+						> a{
+							font-size: 17px;
+							line-height: 20px;
+							padding-left: 17px;
+							padding-right: 17px;
+							letter-spacing: normal;
+						}
+					}
+				}
+			}
+		}
+	}
+	.tt-dropdown-obj{
+		.tt-dropdown-toggle{
+			font-size: 22px;
+		}
+	}
+	.tt-cart{
+		.tt-dropdown-menu{
+			.tt-cart-layout{
+				.tt-cart-content{
+					.tt-cart-btn{
+						[class^=btn]{
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.tt-header-holder{
+	.tt-position-absolute{
+		top: 12px;
+	}
+}
+
+/* revolution */
+.slider-revolution{
+	.tp-caption5{
+		text-align: center;
+		padding-bottom: 2.5% !important;
+	}
+	.tp-shirts-caption-1{
+		font-weight: 400;
+		color: $default_color2;
+	}
+	.tp-shirts-caption-2{
+	}
+	.link-rev{
+		color: $default_color2;
+		font-size: 17px;
+		line-height: 20px;
+		display: inline-block;
+		position: relative;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: -4px;
+			width: 0%;
+			height: 2px;
+			background: #191919;
+			-webkit-transition: width .3s ease-out;
+			transition: width .3s ease-out;
+		}
+		&:hover{
+			&:before{
+				width: 100%;
+			}
+		}
+	}
+	@media (min-width: 1025px){
+		.tp-shirts-caption-1{
+			font-size: 36px;
+			line-height: 60px;
+		}
+		.tp-shirts-caption-2{
+			margin-top: 9px;
+
+		}
+	}
+	@media (max-width: 1024px){
+		.tp-shirts-caption-1{
+			font-size: 28px;
+			line-height: 50px;
+		}
+		.tp-shirts-caption-2{
+			margin-top: 9px;
+
+		}
+	}
+	@media (max-width: 789px){
+		.tp-shirts-caption-1{
+			font-size: 24px;
+			line-height: 34px;
+		}
+		.tp-shirts-caption-2{
+			margin-top: 9px;
+		}
+		.link-rev{
+			font-size: 16px;
+		}
+	}
+	@media (max-width: 575px){
+		.tp-shirts-caption-1{
+			font-size: 20px;
+			line-height: 30px;
+		}
+		.tp-shirts-caption-2{
+			margin-top: 5px;
+		}
+		.link-rev{
+			font-size: 14px;
+		}
+	}
+	@media (max-width: 420px){
+		.tp-shirts-caption-1{
+			font-size: 18px;
+			line-height: 28px;
+		}
+		.tp-shirts-caption-2{
+			margin-top: 5px;
+		}
+		.link-rev{
+			font-size: 12px;
+		}
+	}
+}
+
+/* content layout */
+.tt-tabs-default{
+	position: relative;
+	top: 7px;
+	li{
+		> a{
+			font-size: 17px;
+			color: #999999;
+			font-family: 'Roboto', sans-serif;
+		}
+	}
+	@media (min-width: 1025px){
+		padding-bottom: 45px;
+	}
+	@media (max-width: 575px){
+		padding-bottom: 30px;
+	}
+}
+.tt-product{
+	background: #ffffff;
+	&:not(.tt-view){
+		.tt-image-box{
+			.tt-label-location{
+				[class^="tt-label-"]{
+					font-size: 13px;
+					border-radius: 0;
+					padding: 6px 7px 6px;
+				}
+			}
+			.tt-btn-wishlist{
+				background: #191919;
+				color: #ffffff;
+			}
+		}
+		@media (min-width: 1025px){
+			.tt-description{
+				padding-top: 15px;
+				.tt-title{
+					font-size: 17px;
+				}
+				.tt-price{
+					margin-top: 6px;
+					font-size: 17px;
+				}
+				.tt-btn-addtocart:before{
+					display: none;
+					border-radius: 0;
+				}
+				.tt-btn-addtocart.thumbprod-button-bg{
+					border-radius: 0;
+					background: #191919;
+					color: #ffffff;
+					padding: 13px 16px 13px;
+					&:hover{
+						background: #444444;
+						color: #ffffff;
+					}
+				}
+				.tt-product-inside-hover{
+					background: #ffffff;
+					opacity: 1 !important;
+					display: block;
+				}
+			}
+		}
+		@media (max-width: 1024px){
+			.tt-description{
+				.tt-btn-addtocart:before{
+					display: none;
+					border-radius: 0;
+				}
+				.tt-price{
+					margin-top: 6px;
+					font-weight: normal;
+				}
+				.tt-btn-addtocart.thumbprod-button-bg{
+					border-radius: 0;
+					background: #191919;
+					color: #ffffff;
+					padding: 13px 16px 13px;
+					&:hover{
+						background: #444444;
+						color: #ffffff;
+					}
+				}
+				.tt-product-inside-hover{
+					margin-top: 11px;
+					.tt-row-btn:not(:first-child){
+						margin-top: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+.tt-layout-product-item + .tt_product_showmore{
+	margin-top: 62px;
+}
+.tt-layout-product-item:not(.tt-view){
+	.tt-product,
+	.tt-product-design02,
+	.tt-collection-item{
+		margin-top: 50px;
+		@media (max-width: 575px){
+			margin-top: 30px;
+		}
+	}
+}
+.tt-promo-box{
+	.tt-description{
+		.tt-title-small{
+			font-size: 17px;
+		}
+	}
+}
+.tt-blog-thumb{
+	.tt-title-description{
+		padding: 20px 15px 0px;
+		.tt-tag{
+			font-size: 16px;
+		}
+		.tt-background{
+			border-radius: 0;
+		}
+		.tt-title{
+			font-size: 26px;
+			line-height: 34px;
+			letter-spacing: 0;
+			margin-top: 12px;
+			a:hover{
+				color: #191919;
+				text-decoration: underline;
+			}
+		}
+		.tt-meta{
+			margin-top: 18px;
+			font-size: 14px;
+		}
+	}
+}
+
+.tt-back-to-top{
+	border-radius: 0;
+}
+
+
+/* footer */
+footer{
+	.tt-color-scheme-03{
+		background: #191919;
+		color: #999999;
+	}
+	.tt-color-scheme-04{
+		background: #191919;
+		color: #999999;
+	}
+	@media (min-width: 790px){
+		.tt-color-scheme-03 .tt-list li a,
+		.tt-color-scheme-03 .tt-mobile-collapse .tt-collapse-content .tt-list li a{
+			color: #ffffff;
+			font-size: 16px;
+			padding-top: 4px;
+			.tt-newsletter{
+				.btn{
+					background: #ffffff;
+					color: #191919;
+					&:hover{
+						background: #444444;
+						color: #ffffff;
+					}
+				}
+			}
+		}
+		.tt-mobile-collapse{
+			.tt-collapse-title{
+				display: none;
+				font-size: 26px;
+				line-height: 34px;
+			}
+		}
+		.tt-newsletter{
+			font-size: 16px;
+			line-height: 22px;
+			.tt-mobile-collapse{
+				.tt-collapse-title{
+					display: block;
+					letter-spacing: normal;
+					padding-bottom: 10px;
+				}
+			}
+			&:not(.tt-indent-item){
+				.tt-collapse-content{
+					.form-inline{
+						.form-group{
+							.form-control{
+								border-radius: 0;
+								background: #2B2B2B;
+								border-color:#2B2B2B;
+								color: #ffffff;
+								&:not(:focus)::-webkit-input-placeholder{color:#ffffff;}
+								&:not(:focus)::-moz-placeholder      {color:#ffffff;}
+								&:not(:focus):-moz-placeholder       {color:#ffffff;}
+								&:not(:focus):-ms-input-placeholder  {color:#ffffff;}
+							}
+						}
+					}
+				}
+			}
+		}
+		.tt-social-icon{
+			li{
+				a{
+					font-size: 24px;
+					color: #ffffff;
+				}
+			}
+		}
+		.tt-footer-col{
+			padding-bottom: 38px;
+			.tt-newsletter:not(.tt-indent-item){
+				.tt-collapse-content{
+					form{
+						margin-top: 34px;
+					}
+				}
+			}
+			.tt-social-icon{
+				margin-top: 17px;
+				li:not(:last-child):not(:first-child){
+					margin: 0 8px;
+				}
+			}
+		}
+	}
+	@media (max-width: 789px){
+		background: #191919;
+		color: #999999;
+		.tt-color-scheme-03{
+			background: #191919;
+			color: #999999;
+		}
+		.tt-mobile-collapse{
+			.tt-collapse-title{
+				border-bottom-color:#777777;
+				color: #ffffff;
+			}
+		}
+		.tt-footer-custom:last-child{
+			background: #191919;
+			color: #999999;
+		}
+		.tt-footer-box{
+			address.tt-address01{
+				color: #999999;
+			}
+			.tt-link-icon{
+				.tt-icon{
+					color: #ffffff;
+				}
+				.tt-text{
+					color: #ffffff;
+				}
+				&:hover{
+					.tt-icon{
+						color: #ffffff;
+					}
+					.tt-text{
+						color: #ffffff;
+					}
+				}
+			}
+			.tt-social-icon{
+				li{
+					a{
+						&:hover{
+							color: #ffffff;
+						}
+					}
+				}
+			}
+		}
+		address{
+			span{
+				color: #ffffff;
+			}
+		}
+		.tt-footer-custom:last-child .tt-box-copyright{
+			margin-top: 0;
+		}
+		.tt-footer-custom:last-child:not(:first-child){
+			margin-top: 0px;
+		}
+	}
+}
+.tt-back-to-top{
+	@media (max-width: 789px){
+		background: #191919;
+		color: #ffffff;
+		&:hover{
+			background: #191919;
+			color: #ffffff;
+		}
+	}
+}

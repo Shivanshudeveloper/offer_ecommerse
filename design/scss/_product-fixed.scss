@@ -1,0 +1,143 @@
+/*
+	Product fixed
+*/
+.tt-fixed-product-wrapper{
+	background-color: #0F0F0F;
+	padding:10px 0;
+	.tt-fixed-product{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-content: center;
+		align-items: center;
+		.tt-img{
+			max-width:32px;
+			min-width:32px;
+			img{
+				width: 100%;
+				height: auto;
+			}
+			& + .tt-description{
+				margin-left: 14px;
+			}
+		}
+		.tt-description{
+			.tt-title{
+				font-size: 14px;
+				line-height: 20px;
+				color: #ffffff;
+				font-weight: 400;
+				a{
+					color: #ffffff;
+					text-decoration:none;
+					&:hover{
+						color: #2879fe;
+					}
+				}
+			}
+			.tt-price{
+				font-size: 16px;
+				line-height: 22px;
+				color: #ffffff;
+				.new-price{
+					color: #F8353E;
+					margin-right:7px;
+				}
+				.old-price{
+					color: #ffffff;
+					text-decoration: line-through;
+					.money{
+						text-decoration: line-through;
+					}
+				}
+				span{
+					display: inline-block;
+				}
+			}
+			> *:nth-child(1){
+				margin-top: 0;
+			}
+		}
+	}
+	.tt-row-custom01{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-end;
+		align-content: center;
+		align-items: center;
+		.col-item{
+			&:not(:first-child){
+				margin-left: 15px;
+			}
+		}
+	}
+	.form-default{
+		select.form-control.tt-obj-dark{
+			background: #414141;
+			border-color:#414141;
+			color: #ffffff;
+			height: 40px !important;
+			padding: 7px 12px 11px 15px;
+			max-width:380px;
+		}
+	}
+	.tt-input-counter.style-01{
+		max-width: 100px;
+		min-width: 100px;
+		input{
+			background: #414141;
+			color: #ffffff;
+			height: 40px;
+		}
+		span{
+			color: #ffffff;
+			height: 40px;
+			line-height: 40px;
+			&:before{
+				line-height: 40px;
+			}
+		}
+	}
+	@media (max-width: 1024px){
+		.col-select{
+			display: none;
+		}
+	}
+	@media (max-width: 790px){
+		.tt-row-custom01{
+			.btn{
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+		.tt-input-counter.style-01{
+			max-width: 90px;
+			min-width: 90px;
+			input{
+				max-width: 90px;
+			}
+			span{
+				width: 40px;
+			}
+		}
+		.tt-row-custom01 .col-item:not(:first-child){
+			margin-left: 10px;
+		}
+	}
+	@media (max-width: 520px){
+		.tt-fixed-product{
+			.tt-description{
+				.tt-title{
+					display: none;
+				}
+				.tt-price{
+					span{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}

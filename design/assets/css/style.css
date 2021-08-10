@@ -15082,5 +15082,8 @@ a.text-primary-hover:hover, button.text-primary-hover:hover {
 }
 
 /*User CSS*/
-
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
 /*# sourceMappingURL=style.css.map */
